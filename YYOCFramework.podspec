@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 这是自己用的类库，基本上都是一个基类，或者一些通用的类。
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/YYOCFramework'
+  s.homepage         = 'https://github.com/yanyanforest/YYOCFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yanyanforest' => 'yanyanforest@163.com' }
