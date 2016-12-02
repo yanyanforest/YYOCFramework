@@ -13,6 +13,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
+
+```ruby
+pod "YYOCFramework"
+```
+本库依赖于Masonry、AFNetworking、ReactiveCocoa、MJRefresh
+
 YYOCFramework is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -22,7 +28,7 @@ pod "YYOCFramework"
 
 ## Author
 
-yanyan, 2570583222@qq.com
+yanyanforest, yanyanforest@163.com
 
 ## License
 

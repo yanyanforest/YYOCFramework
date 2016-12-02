@@ -1,0 +1,6 @@
+framework module YYOCFramework {
+  umbrella header "YYOCFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

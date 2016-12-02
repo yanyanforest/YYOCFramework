@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YYOCFramework'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YYOCFramework.'
+  s.summary          = '这是自己用的类库，基本上都是一个基类，或者一些通用的类'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,30 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+这是自己用的类库，基本上都是一个基类，或者一些通用的类。
                        DESC
 
   s.homepage         = 'https://github.com/<GITHUB_USERNAME>/YYOCFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'yanyan' => '2570583222@qq.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/YYOCFramework.git', :tag => s.version.to_s }
+  s.author           = { 'yanyanforest' => 'yanyanforest@163.com' }
+  s.source           = { :git => 'https://github.com/yanyanforest/YYOCFramework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
+  s.public_header_files = 'YYOCFramework/Classes/YYOCFramework.h'
 
   s.source_files = 'YYOCFramework/Classes/**/*'
   
   # s.resource_bundles = {
   #   'YYOCFramework' => ['YYOCFramework/Assets/*.png']
   # }
-
+s.requires_arc = true
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.frameworks = 'UIKit', 'Foundation'
+    s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'Masonry', '~> 1.0.0'
+    s.dependency 'Reachability'#网络状态
+    s.dependency 'SDWebImage'#URL 图片
+
 end

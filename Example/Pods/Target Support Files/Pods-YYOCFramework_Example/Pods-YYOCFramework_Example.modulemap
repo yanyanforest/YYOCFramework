@@ -1,0 +1,6 @@
+framework module Pods_YYOCFramework_Example {
+  umbrella header "Pods-YYOCFramework_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
