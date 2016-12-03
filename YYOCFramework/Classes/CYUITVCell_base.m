@@ -6,9 +6,9 @@
 //  Copyright © 2016年 198. All rights reserved.
 //
 
-#import "UITVCell_base.h"
+#import "CYUITVCell_base.h"
 
-@implementation UITVCell_base
+@implementation CYUITVCell_base
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {

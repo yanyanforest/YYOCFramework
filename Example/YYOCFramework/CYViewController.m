@@ -7,7 +7,9 @@
 //
 
 #import "CYViewController.h"
+#import <YYOCFramework/NSDate+Calendar.h>
 
+#import "YYOCFramework/YYOCFramework.h"
 @interface CYViewController ()
 
 @end
@@ -18,6 +20,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSDate *date = [NSDate date];
+    NSLog(@"%@",[NSDate dateStringWithDate:date]);
+
 }
 
 - (void)didReceiveMemoryWarning

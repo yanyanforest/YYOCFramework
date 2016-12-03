@@ -7,7 +7,7 @@
 //
 
 #import "CYUITVDSD_base.h"
-#import "UITVCell_base.h"
+#import "CYUITVCell_base.h"
 #import "CYUITVHeaderFooter_base.h"
 @implementation CYUITVDSD_base
 - (instancetype)init
@@ -56,14 +56,14 @@
     if (self.classesIdbyReusedCells.allKeys.count > 1 && self.classesIdbyReusedCells.allKeys.count>indexPath.section) {
         cellId = self.classesIdbyReusedCells.allKeys[indexPath.section];
     }
-    UITVCell_base *cell = (UITVCell_base *)[tableView dequeueReusableCellWithIdentifier:cellId forIndexPath: indexPath];
+    CYUITVCell_base *cell = (CYUITVCell_base *)[tableView dequeueReusableCellWithIdentifier:cellId forIndexPath: indexPath];
     [cell setObject:[self itemAtIndexPath:indexPath]];
 //    cell.selectionStyle = UITableViewCellSelectionStyleBlue
     
     [self settingsForCell:cell];
     return  cell;
 }
-- (void)settingsForCell:(UITVCell_base *)cell{
+- (void)settingsForCell:(CYUITVCell_base *)cell{
     if (self.tableView.separatorStyle != UITableViewCellSeparatorStyleNone) {
         if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
             cell.separatorInset = UIEdgeInsetsZero;

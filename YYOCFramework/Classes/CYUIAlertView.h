@@ -28,6 +28,6 @@
 - (void)showAlertViewInViewController:( UIViewController*)vc;
 @property(nonatomic,strong)CYBlock_void block_cancel;//点击取消按钮
 @property(nonatomic,strong)CYBlock_void block_destruct;//点击 destructiveButton
-@property(nonatomic,strong)CYBlock_Int block_clickIndex;//actionsheet点击其他的按钮，下标从0开始
+@property(nonatomic,strong)CYBlock_Integer block_clickIndex;//actionsheet点击其他的按钮，下标从0开始
 
 @end

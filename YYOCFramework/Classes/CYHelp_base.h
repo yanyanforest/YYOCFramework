@@ -22,4 +22,10 @@
  *  @return 应用的名字
  */
 + (NSString *)AppName;
+/**
+ *  获取应用的当前版本
+ *
+ *  @return 版本
+ */
++ (NSString *)AppVersion;
 @end
