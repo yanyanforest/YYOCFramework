@@ -46,7 +46,7 @@
                 }
             }];
             [alertController addAction:cancelAction];
-            for (int i = 0; i<argArr.count; i++) {
+            for (NSInteger i = 0; i<argArr.count; i++) {
                 NSString *otherTitle = argArr[i];
                 UIAlertAction *action = [UIAlertAction actionWithTitle:otherTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                     if (self.block_clickIndex) {

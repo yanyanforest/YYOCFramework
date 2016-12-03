@@ -41,7 +41,6 @@
 -(void)writeView{
     
 }
-#warning - 隐藏tabbar -
 - (void)hideTabBar:(BOOL)hide
 {
 //    if (!self.tabBarController) {

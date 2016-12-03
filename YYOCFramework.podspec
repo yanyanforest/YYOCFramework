@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYOCFramework'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '这是自己用的类库，基本上都是基类和一些通用的类'
 
 # This description is used to generate tags and improve search results.
